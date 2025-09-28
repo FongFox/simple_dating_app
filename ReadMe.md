@@ -18,15 +18,49 @@ This README only covers what the project is and how to run it locally.
 simple_dating_app
 ├─ API
 │  ├─ API.csproj
-│  ├─ API.http
 │  ├─ appsettings.Development.json
 │  ├─ appsettings.json
 │  ├─ Controllers
+│  │  ├─ MembersController.cs
 │  │  └─ WeatherForecastController.cs
+│  ├─ Data
+│  │  ├─ AppDbContext.cs
+│  │  └─ Migrations
+│  │     ├─ 20250928083454_InitialCreate.cs
+│  │     ├─ 20250928083454_InitialCreate.Designer.cs
+│  │     └─ AppDbContextModelSnapshot.cs
+│  ├─ dating.db
+│  ├─ dating.db-shm
+│  ├─ dating.db-wal
+│  ├─ Entities
+│  │  └─ AppUser.cs
 │  ├─ Program.cs
 │  ├─ Properties
 │  │  └─ launchSettings.json
 │  └─ WeatherForecast.cs
+├─ client
+│  ├─ .editorconfig
+│  ├─ .postcssrc.json
+│  ├─ angular.json
+│  ├─ eslint.config.js
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ public
+│  │  └─ favicon.ico
+│  ├─ README.md
+│  ├─ src
+│  │  ├─ app
+│  │  │  ├─ app.config.ts
+│  │  │  ├─ app.css
+│  │  │  ├─ app.html
+│  │  │  ├─ app.routes.ts
+│  │  │  └─ app.ts
+│  │  ├─ index.html
+│  │  ├─ main.ts
+│  │  └─ styles.css
+│  ├─ tsconfig.app.json
+│  ├─ tsconfig.json
+│  └─ tsconfig.spec.json
 ├─ ReadMe.md
 └─ simple_dating_app.sln
 ```
