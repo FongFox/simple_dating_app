@@ -1,0 +1,27 @@
+meta {
+  name: Register User Bob
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://localhost:5001/api/account/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "gender": "male",
+      "email": "bob@test.com",
+      "displayName": "Bob",
+      "dateOfBirth": "1985-01-23",
+      "city": "London",
+      "country": "UK",
+      "password": "Pa$$w0rd"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

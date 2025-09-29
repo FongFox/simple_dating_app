@@ -1,0 +1,19 @@
+meta {
+  name: Get User by userId
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/api/users/lisa-id
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

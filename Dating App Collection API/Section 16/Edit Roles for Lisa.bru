@@ -1,0 +1,19 @@
+meta {
+  name: Edit Roles for Lisa
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{url}}/api/admin/edit-roles/lisa-id?roles=Moderator,Member
+  body: none
+  auth: inherit
+}
+
+params:query {
+  roles: Moderator,Member
+}
+
+settings {
+  encodeUrl: true
+}

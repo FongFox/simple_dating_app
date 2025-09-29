@@ -1,0 +1,23 @@
+meta {
+  name: Add like for lisa from todd
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/api/likes/lisa-id
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{todd_token}}
+}
+
+body:json {
+  {}
+}
+
+settings {
+  encodeUrl: true
+}

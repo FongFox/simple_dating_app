@@ -1,0 +1,23 @@
+meta {
+  name: Get Outbox Messages for Todd
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{url}}/api/messages?container=Outbox
+  body: none
+  auth: inherit
+}
+
+params:query {
+  container: Outbox
+}
+
+headers {
+  Authorization: Bearer {{todd_token}}
+}
+
+settings {
+  encodeUrl: true
+}

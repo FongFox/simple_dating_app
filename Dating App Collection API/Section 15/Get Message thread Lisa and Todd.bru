@@ -1,0 +1,19 @@
+meta {
+  name: Get Message thread Lisa and Todd
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{url}}/api/messages/thread/todd-id
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

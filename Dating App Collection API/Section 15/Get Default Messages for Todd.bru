@@ -1,0 +1,19 @@
+meta {
+  name: Get Default Messages for Todd
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url}}/api/messages
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{todd_token}}
+}
+
+settings {
+  encodeUrl: true
+}

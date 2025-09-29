@@ -1,0 +1,19 @@
+meta {
+  name: Get User With Bearer token
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{url}}/api/members/788182f2-ba00-400b-b8c8-e0e6cceec9f8
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJvYkB0ZXN0LmNvbSIsIm5hbWVpZCI6Ijc4ODE4MmYyLWJhMDAtNDAwYi1iOGM4LWUwZTZjY2VlYzlmOCIsIm5iZiI6MTc0NzMwNDQ5NywiZXhwIjoxNzQ3OTA5Mjk3LCJpYXQiOjE3NDczMDQ0OTd9.AiWFdI4cogoz_nRk5ZPa7YalK7X7Zw2rykiWDcaohQ9G9dB4hT-uVkEv_L8aTLIjDpzoQYeDAJMOdQQC_paurQ
+}
+
+settings {
+  encodeUrl: true
+}

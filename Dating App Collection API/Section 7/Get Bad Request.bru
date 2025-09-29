@@ -1,0 +1,15 @@
+meta {
+  name: Get Bad Request
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/api/buggy/bad-request
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

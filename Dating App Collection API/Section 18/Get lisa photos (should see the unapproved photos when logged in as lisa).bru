@@ -1,0 +1,15 @@
+meta {
+  name: Get lisa photos (should see the unapproved photos when logged in as lisa)
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url}}/api/members/lisa-id/photos
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

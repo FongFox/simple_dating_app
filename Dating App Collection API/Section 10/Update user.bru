@@ -1,0 +1,28 @@
+meta {
+  name: Update user
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{url}}/api/members
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{token}}
+}
+
+body:json {
+  {
+      "knownAs": "Lisa 2",
+  	"description": "Updated intro again again",
+  	"city": "Updated city",
+  	"country": "Updated country"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
