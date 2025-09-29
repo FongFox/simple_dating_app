@@ -58,6 +58,9 @@ simple_dating_app
 │  │  ├─ index.html
 │  │  ├─ main.ts
 │  │  └─ styles.css
+│  ├─ ssl (for simulation only)
+│  │  ├─ localhost-key.pem
+│  │  └─ localhost.pem
 │  ├─ tsconfig.app.json
 │  ├─ tsconfig.json
 │  └─ tsconfig.spec.json
