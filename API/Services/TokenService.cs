@@ -23,12 +23,12 @@ public class TokenService(IConfiguration config) : ITokenService
     {
         // 1. Lấy secret key từ file config (appsettings.json).
         // Nếu không có thì ném lỗi ngay.
-        var tokenKey = config["TokenKey"] ?? throw new SecurityTokenException("Cannot get token key!");
+        var tokenKey = config["TokenKey"] ?? throw new Exception("Cannot get token key!");
 
         // 2. Kiểm tra độ dài key phải >= 64 ký tự để đảm bảo an toàn.
         if (tokenKey.Length < 64)
         {
-            throw new SecurityTokenException("Token key needs to be >= 64 characters!");
+            throw new Exception("Token key needs to be >= 64 characters!");
         }
 
         // 3. Biến chuỗi key thành SymmetricSecurityKey để dùng ký token.
