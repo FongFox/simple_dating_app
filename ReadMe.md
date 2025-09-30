@@ -21,6 +21,8 @@ simple_dating_app
 │  ├─ appsettings.Development.json
 │  ├─ appsettings.json
 │  ├─ Controllers
+│  │  ├─ AccountController.cs
+│  │  ├─ BaseApiController.cs
 │  │  ├─ MembersController.cs
 │  │  └─ WeatherForecastController.cs
 │  ├─ Data
@@ -28,15 +30,25 @@ simple_dating_app
 │  │  └─ Migrations
 │  │     ├─ 20250928083454_InitialCreate.cs
 │  │     ├─ 20250928083454_InitialCreate.Designer.cs
+│  │     ├─ 20250929115021_UserEntityUpdated.cs
+│  │     ├─ 20250929115021_UserEntityUpdated.Designer.cs
 │  │     └─ AppDbContextModelSnapshot.cs
 │  ├─ dating.db
-│  ├─ dating.db-shm
-│  ├─ dating.db-wal
+│  ├─ DTOs
+│  │  ├─ LoginDto.cs
+│  │  ├─ RegisterDto.cs
+│  │  └─ UserDto.cs
 │  ├─ Entities
 │  │  └─ AppUser.cs
+│  ├─ Extensions
+│  │  └─ AppUserExtensions.cs
+│  ├─ Interfaces
+│  │  └─ ITokenService.cs
 │  ├─ Program.cs
 │  ├─ Properties
 │  │  └─ launchSettings.json
+│  ├─ Services
+│  │  └─ TokenService.cs
 │  └─ WeatherForecast.cs
 ├─ client
 │  ├─ .editorconfig
